@@ -1,0 +1,14 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: test1
+  namespace: default
+spec: 
+  releaseName: test1
+  chart: stable/nginx-ingress
+  values:
+    image:
+      repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
+      tag: "0.32.0"
+  
