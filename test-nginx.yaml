@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: eu.gcr.io/theworkshop-1/test-app1:v1
+        image: eu.gcr.io/theworkshop-1/test-app1:v1.2
         ports:
         - containerPort: 80
