@@ -6,7 +6,10 @@ metadata:
   namespace: default
 spec: 
   releaseName: test1
-  chart: "stable/nginx-ingress"
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: nginx-ingress
+    version: 1.33.4
   values:
     image:
       repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
